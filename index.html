@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/style.css" />
+      <title>popup-js</title>
+   </head>
+   <body>
+      <header class="header">
+         <button class="header__button">Open</button>
+      </header>
+      <section class="page-popup">
+         <div class="modal popup-write">
+            <form class="popup-write__form" action="http://echo.htmlacademy.ru" method="post">
+               <div class="popup-write__form-wrap">
+                  <div class="popup-write__wrap">
+                     <p class="popup-write__text">
+                        <label class="popup-write__label" for="popup-name">Ваше имя:</label>
+                        <input class="popup-write__input popup__name" type="text" name="name" id="popup-name" placeholder="Имя Фамилия" />
+                     </p>
+                     <p class="popup-write__text">
+                        <label class="popup-write__label" for="popup-email">Ваш e-mail:</label>
+                        <input class="popup-write__input popup__email" type="email" name="email" id="popup-email" placeholder="email@example.com" />
+                     </p>
+                  </div>
+                  <p class="popup-write__text">
+                     <label class="popup-write__label popup-write__label--textarea" for="popup-text">Текст письма:</label>
+                     <textarea class="popup-write__textarea" name="text" id="popup-text" cols="40" rows="5" placeholder="В свободной форме"></textarea>
+                  </p>
+               </div>
+               <div class="popup-write__button-wrap">
+                  <button class="popup-write__button" type="submit">Отправить</button>
+               </div>
+            </form>
+            <button class="popup-button__close write-close" type="button" aria-label="Закрыть"></button>
+         </div>
+      </section>
+      <script src="js/popup.js"></script>
+   </body>
+</html>
